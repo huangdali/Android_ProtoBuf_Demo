@@ -1,0 +1,14 @@
+syntax = "proto3";
+//生成的java类所在的包名
+package com.zhys.protobufdemo;
+
+//登录请求结构体
+message LoginRequest {
+    string username = 1;
+    string pwd = 2;
+}
+//登录响应结构体
+message LoginResponse {
+    int32 code = 1;
+    string msg = 2;
+}
