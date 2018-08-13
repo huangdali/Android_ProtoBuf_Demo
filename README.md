@@ -115,6 +115,7 @@ dependencies中加入protobuf相关依赖
 
 
 大致结构如下：
+
 ![](https://github.com/huangdali/Android_ProtoBuf_Demo/blob/master/screenshot/app.png)
 
 
@@ -165,14 +166,14 @@ Build/Clean Project跑完即可，此时会在\app\build\generated\source\proto�
 
 本例使用intellij idea创建web项目（Eclipse类似），需要添加proto的jar包
 
-**方式一：**maven添加protobuf，搜索protobuf即可
+方式一：maven添加protobuf，搜索protobuf即可
 
 
 ![](https://github.com/huangdali/Android_ProtoBuf_Demo/blob/master/screenshot/addjar.png)
 
 
 
-**方式二：**直接添加jar包，下载地址-->csdn，或者github的demo中有相关jar包
+方式二：直接添加jar包，下载地址-->github的demo中有相关jar包
 
 ####  对外提供登录接口
 
@@ -214,6 +215,9 @@ public class LoginServlet extends HttpServlet {
     }
 }
 ```
+
+此类的逻辑也非常简单，接收客户端请求的数据，将其转换为loginRequest对象，这里使用parseFrom(inputsteam)方法；简单的判断一下用户名是否为admin，密码是否为132【实际项目肯定没有这么简单】，最后将LoginResponse对象返回给客户端即可。
+
 
 ### Android端Protobuf结合HttpURLConnection使用
 
