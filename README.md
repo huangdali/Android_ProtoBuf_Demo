@@ -356,7 +356,7 @@ Protobuf结合HttpURLConnection的写法，网络请求的实质还是将数据�
     }
 ```
 
-运行点击登录按钮即可，再看异形一次效果图
+运行点击登录按钮即可，再看一次效果图
 
 ![](https://github.com/huangdali/Android_ProtoBuf_Demo/blob/master/screenshot/protobuf.gif)
 
@@ -418,7 +418,7 @@ Protobuf结合HttpURLConnection的写法，网络请求的实质还是将数据�
 ```java
 /**
  * 网络发送器
- * Created by HDL on 2017/11/20.
+ * Created by HDL on 2018/8/13.
  *
  * @author HDL
  */
@@ -643,7 +643,7 @@ public class HttpConfiger {
 }
 ```
 
-本类主要就是对外提供一个配置了各种参数的Retrofit对象，注释相对详细可自行理解，需要注意的地方就是添加转换器的时候protobuf转换器要在gson转换器之前，即：
+本类主要就是对外提供一个配置了各种参数的Retrofit对象，注释相对详细可自行理解，需要注意的地方就是添加转换器的时候protobuf转换器要在gson转换器之前，并且需要传入一个proto的Registry对象，即：
 
 ```java
    .addConverterFactory(ProtoConverterFactory.createWithRegistry(registry))//一定要在gsonconvert的前面
@@ -659,7 +659,7 @@ public interface ResultCallbackListener<T> extends Observer<T> {
 
 本文的教程基本结束了，你会了吗？
 
-下面贴出demo地址，如有疑问可在本文评论中提示，也可以到github中提issue
+下面贴出demo地址，如有疑问可在本文评论中提出，也可以到github中提issue
 
 [https://github.com/huangdali/Android_ProtoBuf_Demo](https://github.com/huangdali/Android_ProtoBuf_Demo)
 
