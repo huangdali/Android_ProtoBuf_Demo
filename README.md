@@ -8,9 +8,13 @@ Protobuf （全称 Protocol Buffers），是Google公司开发的一种数据描
 - 英文版：Language Guide (proto3) （https://developers.google.com/protocol-buffers/docs/proto3?hl=zh-cn#generating）
 ### Demo介绍
 本文以用户登录为例（为啥又是登录？因为简单，容易理解呀），下面是demo的效果图：
+
 app端:
+![](https://github.com/huangdali/Android_ProtoBuf_Demo/blob/master/screenshot/protobuf.gif)
 
 服务端：
+![](https://github.com/huangdali/Android_ProtoBuf_Demo/blob/master/screenshot/login.png)
+
 
 下面开始介绍如何实现
 ### 搭建.proto文件生成java类的环境
