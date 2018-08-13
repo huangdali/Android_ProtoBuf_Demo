@@ -338,8 +338,10 @@ Protobuf结合HttpURLConnection的写法，网络请求的实质还是将数据�
         }.start();
     }
 ```
+本方法接收一个byte数组，将该数组作为body请求指定的接口，并解析服务器回复的结果，提示相应的信息。
 
-如何将LoginRequest.toByteArray()呢？其实该类已经自动生成该方法了
+
+那如何将LoginRequest作为byte数组呢？其实该类已经自动生成该方法了
 
 ```java
  public void onLogin1(View view) {
@@ -660,3 +662,5 @@ public interface ResultCallbackListener<T> extends Observer<T> {
 下面贴出demo地址，如有疑问可在本文评论中提示，也可以到github中提issue
 
 [https://github.com/huangdali/Android_ProtoBuf_Demo](https://github.com/huangdali/Android_ProtoBuf_Demo)
+
+如果此教程帮助到你，请到上面的地址来个star，更欢迎你的fork
