@@ -5,7 +5,7 @@
 
 ### 什么是Protobuf
 
-Protobuf （全称 Protocol Buffers），是Google公司开发的一种数据描述语言，类似于XML能够将结构化数据序列化，可用于数据存储、通信协议等方面【Protobuf百度百科介绍(https://baike.baidu.com/item/Protocol%20Buffers/3997436)】。简单点来说就是类似于Json、Xml，最主要的优点是比Json、Xml速度快，相信不久的将来应用会更加广泛。
+Protobuf （全称 Protocol Buffers），是Google公司开发的一种数据描述语言，类似于XML能够将结构化数据序列化，可用于数据存储、通信协议等方面【[Protobuf百度百科介绍](https://baike.baidu.com/item/Protocol%20Buffers/3997436)】。简单点来说就是类似于Json、Xml，最主要的优点是比Json、Xml速度快，相信不久的将来应用会更加广泛。
 以上只是简单的介绍，为了方便快速进入使用教程，本文默认你已经知道protobuf是什么、优缺点、应用场景、定义消息类型等，如未了解这些可参考以下文档：
 - 中文版：Protobuf3语言指南（https://blog.csdn.net/u011518120/article/details/54604615）
 - 英文版：Language Guide (proto3) （https://developers.google.com/protocol-buffers/docs/proto3?hl=zh-cn#generating）
