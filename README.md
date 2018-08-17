@@ -1,7 +1,11 @@
 ##  Android项目使用Protobuf教程（结合Retrofit+RxJava及HttpURLConnection使用）
 
 最近项目中使用到了protobuf，但是网上的关于protobuf在android中的使用教程是非常的少，Protobuf结合Retrofit+RxJava使用的教程几乎也没有，即使有相关介绍写得也不够全面，于是才有了这篇相对比较完整的文章（包括服务端和App端代码），希望可以帮助更多的人在android中使用protobuf。
+
 >请尊重原创，转载需要注明出处，大力哥的博客：https://blog.csdn.net/qq137722697
+
+**protobuf进阶篇已完成-->** [Android/Java中使用Protobuf的Any类型实现泛型解析](https://blog.csdn.net/qq137722697/article/details/81779938)
+
 
 ### 什么是Protobuf
 
